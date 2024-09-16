@@ -1,0 +1,35 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is my working portfolio to can think that i'm doing something wuth my life",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run dev --workspaces",
+    "dev_only-api": "npm run dev --workspace=api",
+    "dev_only-client": "npm run dev --workspace=client"
+  },
+  "workspaces":["./packages/*"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FM9408/Portfolio.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Henry",
+    "Express",
+    "Pg",
+    "Sequelize",
+    "Postgres",
+    "React",
+    "Axios",
+    "js",
+    "Redux"
+  ],
+  "author": "FM9408",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FM9408/Portfolio/issues"
+  },
+  "homepage": "https://github.com/FM9408/Portfolio#readme"
+}
