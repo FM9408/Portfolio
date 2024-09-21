@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "private": "true",
   "version": "1.0.0",
   "description": "This is my working portfolio to can think that i'm doing something wuth my life",
   "main": "index.js",
