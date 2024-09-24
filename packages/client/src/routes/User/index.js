@@ -1,16 +1,24 @@
 import { Routes, Route } from "react-router-dom"
 import { Homepage } from "../../pages/User/homepaje"
+import ContactPage from "../../pages/User/Contact"
 import UserAppbar from "../../modules/Appbar"
-import { Box } from "@mui/material"
+import { Box, Container, Paper } from "@mui/material"
 
 
 function UserRouter() {
     return (
         <Box>
-            <UserAppbar />
-            <Routes>
-                <Route path='' element={<Homepage />} />
-            </Routes>
+            <Box>
+                <UserAppbar />
+            </Box>
+            <Box>
+                <Paper sx={{backgroundColor:"beige"}}>
+                <Routes>
+                    <Route path='' element={<Homepage />} />
+                    <Route path="/Contacto" element={<ContactPage/>}/>
+                </Routes>
+                </Paper>
+            </Box>
         </Box>
     )
 }
