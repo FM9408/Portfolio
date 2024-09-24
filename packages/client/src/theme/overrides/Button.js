@@ -9,7 +9,9 @@ export default function Button(theme) {
         root: {
           '&:hover': {
             boxShadow: 'none',
+            
           },
+          transition: "background-color .5s ease-in-out"
         },
         sizeLarge: {
           height: 48,
