@@ -1,4 +1,5 @@
-import { alpha } from '@mui/material/styles';
+import { alpha, emphasize } from '@mui/material/styles';
+import * as colors from "@mui/material/colors"
 
 // ----------------------------------------------------------------------
 
@@ -17,21 +18,21 @@ const GREY = {
 };
 
 const PRIMARY = {
-  lighter: '#f16362',
-  light: '#fb3739',
-  main: '#ff1212',
-  dark: '#f10016',
-  darker: '#df0010',
+  lighter: `${colors.red[300]}`,
+  light: `${colors.red[400]}`,
+  main: `${colors.red[500]}`,
+  dark: `${colors.red[600]}`,
+  darker: `${colors.red[700]}`,
   contrastText: '#fff',
 };
 
 const SECONDARY = {
-  lighter: '#fff8e7',
-  light: '#ffebc1',
-  main: '#ffdf9b',
-  dark: '#ffd372',
-  darker: '#ffc855',
-  contrastText: '#000000',
+  lighter: `${alpha(colors.pink[200],.3)}`,
+  light: `${alpha(colors.pink[300],.4)}`,
+  main: `${alpha(colors.pink[400],.5)}`,
+  dark: `${alpha(colors.pink[500],.6)}`,
+  darker: `${alpha(colors.pink[600],.7)}`,
+  contrastText: `${emphasize(colors.pink[400], .9)}`,
 };
 
 const INFO = {
