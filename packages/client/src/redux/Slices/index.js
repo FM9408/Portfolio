@@ -4,7 +4,7 @@ import userSlice from "./User/index.js"
 
 
 const mainIndexReducer = combineReducers({
-    user: userSlice,
+    userSlice
 })
 
 export default mainIndexReducer
