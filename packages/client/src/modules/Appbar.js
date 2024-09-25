@@ -14,7 +14,7 @@ function UserAppbar() {
     return (
         <Box sx={{ display: "flex"}}>
             <AppBar position='static' component="nav" sx={{ display: {xs: "flex", sm: "block"} }}>
-                <Box   sx={{ display: { xs: "block", sm: "inline-flex", width: { xs: "100%", sm: `${100 / 4}%` } } }}>
+                <Box   sx={{ display: { xs: "block", sm: "inline-flex", width: { xs: "100%", sm: `${100 / 4}%`, md:`${100/3}%` } } }}>
                     {
                         Appbarbuttons(buttonHover, buttonKey).map((button) => {
                         return (
@@ -31,10 +31,10 @@ function UserAppbar() {
                         })
                     }    
                 </Box>
-                <Box sx={{display: {xs: "none", sm: "inline-block"}, width: {sm: `${100/2}%`}}}>
+                <Box sx={{display: {xs: "none", sm: "inline-block"}, width: {sm: `${100/4}%`, md: `${100/3}%`, lg:`${100/2}%`}}}>
 
                 </Box>
-                <Box sx={{ display: { xs: "block", sm: "inline-flex", width: { xs: "100%", sm: `${100 / 4}%` } } }}>
+                <Box sx={{ display: { xs: "block", sm: "inline-flex", width: { xs: "100%", sm: `${100 / 4}%`, md:`${100/3}%` } } }}>
                     <SearchField />
                 </Box>
             </AppBar>
