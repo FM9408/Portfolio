@@ -9,10 +9,13 @@ import { parsePath, Route, Routes } from "react-router-dom"
 function MainRouter() {
     const user = React.useContext(userContext)
     return (
-        <Routes>
-           <Route path="/admin/*" element={<AdminRouter />}/> 
-           <Route path={`${window.location.href.toLowerCase().includes("/admin") === false ? "/*" : "none"}`} element={<UserRouter />} />
-        </Routes>
+        <Box>
+            {
+                !window.location.href.toLowerCase().split("/").includes("admin") ? <UserRouter/> :
+                <AdminRouter />
+            }
+            
+        </Box>
            
     )
 } 

@@ -9,7 +9,7 @@ function UserRouter() {
         <Box>
             <UserAppbar />
             <Routes>
-                <Route path='' element={<Homepage />} />
+                <Route path='/' element={<Homepage />} />
             </Routes>
         </Box>
     )
