@@ -78,7 +78,7 @@ let capsEntries = entries.map((entry) => [
 ])
 sequelize.models = Object.fromEntries(capsEntries)
 
-const { } = sequelize.models
+const {User } = sequelize.models
 
 
 module.exports = {
