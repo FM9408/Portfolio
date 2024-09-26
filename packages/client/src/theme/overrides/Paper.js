@@ -1,4 +1,5 @@
-// ----------------------------------------------------------------------
+import palette from "../palette"
+
 
 export default function Paper() {
   return {
