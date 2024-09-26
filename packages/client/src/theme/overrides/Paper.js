@@ -1,4 +1,5 @@
 import palette from "../palette"
+import pallette from "../palette"
 
 
 export default function Paper() {
@@ -10,6 +11,7 @@ export default function Paper() {
       styleOverrides: {
         root: {
           backgroundImage: 'none',
+          backgroundColor: palette.grey[300]
         },
       },
     },
