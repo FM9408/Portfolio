@@ -78,7 +78,11 @@ let capsEntries = entries.map((entry) => [
 ])
 sequelize.models = Object.fromEntries(capsEntries)
 
-const {User } = sequelize.models
+const {User, Photo } = sequelize.models
+
+User.hasOne(Photo, {as:"ProfilePic",foreignKey:"userUuid"})
+Photo.belongsTo(User)
+User.hasMany(Photo, {as: "PostPic", foreignKey:"posterUuid"})
 
 
 module.exports = {
