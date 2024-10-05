@@ -15,12 +15,14 @@ server.listen(PORT, () => {
             `Conexion exitosa a la base de datos ${res.config.database}`
         )
     }).then(() => {
-        userGenerator(20).forEach(async({email, photoURL, displayName}) => {
+        userGenerator(20).forEach(async({email, photoURL, displayName, isAdmin}) => {
             const mockUser = await conn.model("user").create({
                 email,
-                displayName
+                displayName,
+                isAdmin
             })
             mockUser.createProfilePic({photoURL})
+            
         })
     })
     .finally(() => {

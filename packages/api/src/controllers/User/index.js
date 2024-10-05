@@ -3,7 +3,7 @@ const {createNewProfilePic} =require("../Photo/index")
 
 
 async function createUser(req, res) {
-    const {email, displayName, photoURL } = req.body
+    const {email, displayName, photoURL, isAdmin } = req.body
     try {
         const newUser = await User.create({
             email,
