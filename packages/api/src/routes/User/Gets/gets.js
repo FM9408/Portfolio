@@ -2,5 +2,5 @@ const Router = require("express")
 const gets = Router()
 const {getUserInfo} = require("../../../controllers/User")
 
-gets.get("/user", getUserInfo)
+gets.post("/user", getUserInfo)
 module.exports =gets
