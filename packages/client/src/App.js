@@ -16,7 +16,7 @@ function App() {
   const dispatch = useDispatch()
 
 const state = useSelector((state) => state.mainIndexReducer.userSlice) 
-  dispatch(getUserInfo("OfRSPPJk@yahoo.com"))
+  dispatch(getUserInfo("XUHpszpq@yahoo.com"))
 React.useEffect(() => {
   if(loggedUser !== state) {
     setUser(state)
