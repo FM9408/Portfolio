@@ -13,10 +13,12 @@ axios.defaults.baseURL = process.env.NODE_ENV === "production" ?
   "http://localhost:3001"
 
 
+export const localStore = window.localStorage
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider store={store}>
-    <BrowserRouter>
+  <Provider store={store} >
+    <BrowserRouter >
       <App />
     </BrowserRouter>
   </Provider>
